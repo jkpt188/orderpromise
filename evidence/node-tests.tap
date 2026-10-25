@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: Baseline A101
+ok 1 - Baseline A101
+  ---
+  duration_ms: 3.4293
+  type: 'test'
+  ...
+# Subtest: Baseline A102
+ok 2 - Baseline A102
+  ---
+  duration_ms: 0.1297
+  type: 'test'
+  ...
+# Subtest: Baseline A103
+ok 3 - Baseline A103
+  ---
+  duration_ms: 0.0779
+  type: 'test'
+  ...
+# Subtest: Baseline A104
+ok 4 - Baseline A104
+  ---
+  duration_ms: 0.0727
+  type: 'test'
+  ...
+# Subtest: Baseline A105
+ok 5 - Baseline A105
+  ---
+  duration_ms: 0.1602
+  type: 'test'
+  ...
+# Subtest: Baseline A106
+ok 6 - Baseline A106
+  ---
+  duration_ms: 0.0881
+  type: 'test'
+  ...
+# Subtest: Stale feed suppresses missing-event claim
+ok 7 - Stale feed suppresses missing-event claim
+  ---
+  duration_ms: 0.199
+  type: 'test'
+  ...
+# Subtest: Duplicate event delivery is ignored
+ok 8 - Duplicate event delivery is ignored
+  ---
+  duration_ms: 0.0765
+  type: 'test'
+  ...
+# Subtest: Shipment references deduplicate
+ok 9 - Shipment references deduplicate
+  ---
+  duration_ms: 0.3168
+  type: 'test'
+  ...
+# Subtest: Recovery requires human approval
+ok 10 - Recovery requires human approval
+  ---
+  duration_ms: 0.3291
+  type: 'test'
+  ...
+# Subtest: Approved recovery satisfies shipment
+ok 11 - Approved recovery satisfies shipment
+  ---
+  duration_ms: 0.1576
+  type: 'test'
+  ...
+# Subtest: Replay creates exactly one shipment
+ok 12 - Replay creates exactly one shipment
+  ---
+  duration_ms: 0.0631
+  type: 'test'
+  ...
+# Subtest: Arrival invalidates old recovery plan
+ok 13 - Arrival invalidates old recovery plan
+  ---
+  duration_ms: 0.0421
+  type: 'test'
+  ...
+# Subtest: Out-of-order event resolves conflict
+ok 14 - Out-of-order event resolves conflict
+  ---
+  duration_ms: 0.049
+  type: 'test'
+  ...
+# Subtest: 15-minute freshness boundary is allowed
+ok 15 - 15-minute freshness boundary is allowed
+  ---
+  duration_ms: 0.0396
+  type: 'test'
+  ...
+# Subtest: Future event is rejected
+ok 16 - Future event is rejected
+  ---
+  duration_ms: 0.039
+  type: 'test'
+  ...
+# Subtest: Malformed events and unknown orders are rejected
+ok 17 - Malformed events and unknown orders are rejected
+  ---
+  duration_ms: 1.5431
+  type: 'test'
+  ...
+# Subtest: Event ID collision cannot overwrite evidence
+ok 18 - Event ID collision cannot overwrite evidence
+  ---
+  duration_ms: 0.5321
+  type: 'test'
+  ...
+# Subtest: Stale evidence blocks recovery
+ok 19 - Stale evidence blocks recovery
+  ---
+  duration_ms: 0.216
+  type: 'test'
+  ...
+# Subtest: Duplicate shipment and invoice conflict cannot auto-recover
+ok 20 - Duplicate shipment and invoice conflict cannot auto-recover
+  ---
+  duration_ms: 0.2455
+  type: 'test'
+  ...
+# Subtest: Audit records approval and blocked replay
+ok 21 - Audit records approval and blocked replay
+  ---
+  duration_ms: 0.8384
+  type: 'test'
+  ...
+# Subtest: Explanation cites source references
+ok 22 - Explanation cites source references
+  ---
+  duration_ms: 0.3538
+  type: 'test'
+  ...
+# Subtest: Baseline flags three orders totaling synthetic $6950
+ok 23 - Baseline flags three orders totaling synthetic $6950
+  ---
+  duration_ms: 0.1773
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 294.7379

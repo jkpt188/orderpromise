@@ -1,0 +1,155 @@
+{
+  "project": "OrderPromise",
+  "scope": "Allowlisted public-release assets only; prior Git history and local configuration excluded",
+  "passed": true,
+  "scannedFiles": 29,
+  "findings": [],
+  "manifest": [
+    {
+      "file": ".gitignore",
+      "bytes": 95,
+      "sha256": "0eebdc7904aeba1ccf2e2bf403f59627683fe4abfa1fcd0fd8a9d7753fc6da8c"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1749,
+      "sha256": "d8d4fd6c61eb66386d03f2208513bc413ed590920b4ddc25750c6836ee81aaf3"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 10943,
+      "sha256": "5f2fa78bd790f2d3495ebad66b688b0dd96d0f7daac9760292ef814e81fca3cc"
+    },
+    {
+      "file": "engine.js",
+      "bytes": 9430,
+      "sha256": "f54864ef5b2f255717d16924bab4dbcc2ad86a28f26415f88e08cc6a4dc6305a"
+    },
+    {
+      "file": "app.js",
+      "bytes": 20274,
+      "sha256": "7f325ebf682f8e27a0f51c7d13463198870638f99a1ee350c62eed0ee8a4b90f"
+    },
+    {
+      "file": "package.json",
+      "bytes": 302,
+      "sha256": "e2c0fd1124fcb22a7984b4f2281877b0973bf33c5dfd560590c46d34035c8ecd"
+    },
+    {
+      "file": "server.cjs",
+      "bytes": 1534,
+      "sha256": "725f8ff7aca95f98e9166bdb913f875ae581599e7467a3f6db5ab340f08fae3c"
+    },
+    {
+      "file": "build.cjs",
+      "bytes": 2230,
+      "sha256": "f3aabab8a10211639eccf1b06a100eeb90a0e518a22b7aa2ba241a8029f6f399"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1082,
+      "sha256": "fe2da98b6461a33efdef63619c4c7be09cb66c0b3157172c652d1e4f38063a37"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6072,
+      "sha256": "9294e1bf896324e2132742a847361979e4062bac38935833d28bd4fdef91bd2b"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "bytes": 4525,
+      "sha256": "85adc57fa27a3ca6bdbfbeb82f18212e1dbd7eafc2e4038b91d890a438a059cd"
+    },
+    {
+      "file": "DEMO-SCRIPT.md",
+      "bytes": 3041,
+      "sha256": "9dc7edee2dda22fe534787c28d80a7f1e6a3461dc7d5966f037260e240d6ee6c"
+    },
+    {
+      "file": "AI-HANDOFF-PROMPT.md",
+      "bytes": 1665,
+      "sha256": "a300d28693aad05fae2f3af78a0fd40a6d0bec9ce111c96b5766c612afb7f554"
+    },
+    {
+      "file": "MARKET-EVIDENCE.md",
+      "bytes": 4928,
+      "sha256": "69ca1c816a354ef0145cfb2efcd00a93f1bac570a6daa6a5cf04e4290e931fee"
+    },
+    {
+      "file": "RUBRIC-REVIEW.md",
+      "bytes": 3069,
+      "sha256": "73908d3d9ca26039e73fa3fb92ae0cd551f90e405aa189fac3c802926f709e54"
+    },
+    {
+      "file": "SUBMISSION-ANSWERS.md",
+      "bytes": 6100,
+      "sha256": "a5eac6a9bf13134249107d184019130bc42a26f82128469da62bad882b13f33d"
+    },
+    {
+      "file": "TEST-REPORT.md",
+      "bytes": 1735,
+      "sha256": "fdf7bc187d9b4a6859f0171e0ace01b25bdd7aacda6d9266917775daf4d29225"
+    },
+    {
+      "file": "PUBLICATION-REVIEW.md",
+      "bytes": 2267,
+      "sha256": "2e4ec93e6d74ef053a42de956f9d78e2ef3a431bc97933bbbd1234e18134f815"
+    },
+    {
+      "file": "audit-public.cjs",
+      "bytes": 2229,
+      "sha256": "5dfa2708f58b451d56012f599041f230127620a07c51194be14be151fd9356f6"
+    },
+    {
+      "file": "tests/engine.test.cjs",
+      "bytes": 1724,
+      "sha256": "528863ec1bf89b703fefd9f0e29a1eb94dd0ed45791a9e16f3eeea62f94fa423"
+    },
+    {
+      "file": "source-bundle.json",
+      "bytes": 80263,
+      "sha256": "4a226f3c263adaaaae6d865a1fae2f1bfe8df3d6ecaba9a41553a0e8a441d2ff"
+    },
+    {
+      "file": "dist/index.html",
+      "bytes": 1749,
+      "sha256": "d8d4fd6c61eb66386d03f2208513bc413ed590920b4ddc25750c6836ee81aaf3"
+    },
+    {
+      "file": "dist/styles.css",
+      "bytes": 10943,
+      "sha256": "5f2fa78bd790f2d3495ebad66b688b0dd96d0f7daac9760292ef814e81fca3cc"
+    },
+    {
+      "file": "dist/engine.js",
+      "bytes": 9430,
+      "sha256": "f54864ef5b2f255717d16924bab4dbcc2ad86a28f26415f88e08cc6a4dc6305a"
+    },
+    {
+      "file": "dist/app.js",
+      "bytes": 20274,
+      "sha256": "7f325ebf682f8e27a0f51c7d13463198870638f99a1ee350c62eed0ee8a4b90f"
+    },
+    {
+      "file": "dist/source-bundle.json",
+      "bytes": 80263,
+      "sha256": "4a226f3c263adaaaae6d865a1fae2f1bfe8df3d6ecaba9a41553a0e8a441d2ff"
+    },
+    {
+      "file": "evidence/baseline.json",
+      "bytes": 9549,
+      "sha256": "7d628685df5f4db40e600d2efb5e57357c73fdb91625a0f586cbbca04af2af7c"
+    },
+    {
+      "file": "evidence/regression-results.json",
+      "bytes": 2446,
+      "sha256": "08314c4cc3220a6386c81a4a54befe3c7699b0bbcc7469cc9636652b670d2212"
+    },
+    {
+      "file": "evidence/node-tests.tap",
+      "bytes": 3183,
+      "sha256": "5f5ee739bb9298c5b984ece5c2d0429171e142b02e9cd2f96418d9631afa8ffd"
+    }
+  ],
+  "limitations": "Pattern scan plus manual review; no assurance of employer IP ownership or zero risk."
+}

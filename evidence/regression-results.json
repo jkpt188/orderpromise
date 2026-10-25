@@ -1,0 +1,104 @@
+{
+  "suite": "Synthetic regression suite v1",
+  "cases": [
+    {
+      "name": "Baseline A101",
+      "expected": "MISSING_SHIPMENT",
+      "actual": "MISSING_SHIPMENT",
+      "passed": true
+    },
+    {
+      "name": "Baseline A102",
+      "expected": "DUPLICATE_SHIPMENT",
+      "actual": "DUPLICATE_SHIPMENT",
+      "passed": true
+    },
+    {
+      "name": "Baseline A103",
+      "expected": "INVOICE_WITHOUT_SHIPMENT",
+      "actual": "INVOICE_WITHOUT_SHIPMENT",
+      "passed": true
+    },
+    {
+      "name": "Baseline A104",
+      "expected": "PENDING",
+      "actual": "PENDING",
+      "passed": true
+    },
+    {
+      "name": "Baseline A105",
+      "expected": "HEALTHY",
+      "actual": "HEALTHY",
+      "passed": true
+    },
+    {
+      "name": "Baseline A106",
+      "expected": "HEALTHY",
+      "actual": "HEALTHY",
+      "passed": true
+    },
+    {
+      "name": "Stale feed suppresses missing-event claim",
+      "expected": "STALE_FEED",
+      "actual": "STALE_FEED",
+      "passed": true
+    },
+    {
+      "name": "Duplicate event delivery is ignored",
+      "expected": "IGNORED",
+      "actual": "IGNORED",
+      "passed": true
+    },
+    {
+      "name": "Shipment references deduplicate",
+      "expected": "HEALTHY",
+      "actual": "HEALTHY",
+      "passed": true
+    },
+    {
+      "name": "Recovery requires human approval",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "Approved recovery satisfies shipment",
+      "expected": "HEALTHY",
+      "actual": "HEALTHY",
+      "passed": true
+    },
+    {
+      "name": "Replay creates exactly one shipment",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "name": "Arrival invalidates old recovery plan",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "passed": true
+    },
+    {
+      "name": "Out-of-order event resolves conflict",
+      "expected": "HEALTHY",
+      "actual": "HEALTHY",
+      "passed": true
+    },
+    {
+      "name": "15-minute freshness boundary is allowed",
+      "expected": "MISSING_SHIPMENT",
+      "actual": "MISSING_SHIPMENT",
+      "passed": true
+    },
+    {
+      "name": "Future event is rejected",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "passed": true
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "disclaimer": "Hand-authored synthetic tests; not production accuracy, financial benefit, or live AI evaluation."
+}

@@ -1,0 +1,348 @@
+{
+  "application": "OrderPromise",
+  "disclosure": "Synthetic prototype, no database or live AI. This is not the portal verification contract.",
+  "state": {
+    "now": "2026-10-25T12:00:00Z",
+    "feedThrough": "2026-10-25T12:00:00Z",
+    "orders": [
+      {
+        "id": "A101",
+        "customer": "Northstar Labs",
+        "value": 4200,
+        "due": "2026-10-25T10:30:00Z",
+        "scenario": "missing"
+      },
+      {
+        "id": "A102",
+        "customer": "Cedar Supply",
+        "value": 1800,
+        "due": "2026-10-25T10:30:00Z",
+        "scenario": "duplicate"
+      },
+      {
+        "id": "A103",
+        "customer": "Harbor Studio",
+        "value": 950,
+        "due": "2026-10-25T10:30:00Z",
+        "scenario": "conflict"
+      },
+      {
+        "id": "A104",
+        "customer": "Juniper Works",
+        "value": 2600,
+        "due": "2026-10-25T13:00:00Z",
+        "scenario": "pending"
+      },
+      {
+        "id": "A105",
+        "customer": "Atlas Design",
+        "value": 3100,
+        "due": "2026-10-25T10:30:00Z",
+        "scenario": "healthy"
+      },
+      {
+        "id": "A106",
+        "customer": "Willow Retail",
+        "value": 1250,
+        "due": "2026-10-25T10:30:00Z",
+        "scenario": "healthy"
+      }
+    ],
+    "events": [
+      {
+        "id": "A101-accepted-ORD-A101",
+        "orderId": "A101",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A101",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A101-reserved-RSV-A101",
+        "orderId": "A101",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A101",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A102-accepted-ORD-A102",
+        "orderId": "A102",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A102",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A102-reserved-RSV-A102",
+        "orderId": "A102",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A102",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A102-shipped-SHP-A102-1",
+        "orderId": "A102",
+        "type": "shipped",
+        "at": "2026-10-25T09:30:00Z",
+        "ref": "SHP-A102-1",
+        "source": "Shipping",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A102-shipped-SHP-A102-2",
+        "orderId": "A102",
+        "type": "shipped",
+        "at": "2026-10-25T09:32:00Z",
+        "ref": "SHP-A102-2",
+        "source": "Shipping",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A102-invoiced-INV-A102",
+        "orderId": "A102",
+        "type": "invoiced",
+        "at": "2026-10-25T09:40:00Z",
+        "ref": "INV-A102",
+        "source": "Billing",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A103-accepted-ORD-A103",
+        "orderId": "A103",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A103",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A103-reserved-RSV-A103",
+        "orderId": "A103",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A103",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A103-invoiced-INV-A103",
+        "orderId": "A103",
+        "type": "invoiced",
+        "at": "2026-10-25T09:40:00Z",
+        "ref": "INV-A103",
+        "source": "Billing",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A104-accepted-ORD-A104",
+        "orderId": "A104",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A104",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A104-reserved-RSV-A104",
+        "orderId": "A104",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A104",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A105-accepted-ORD-A105",
+        "orderId": "A105",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A105",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A105-reserved-RSV-A105",
+        "orderId": "A105",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A105",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A105-shipped-SHP-A105-1",
+        "orderId": "A105",
+        "type": "shipped",
+        "at": "2026-10-25T09:30:00Z",
+        "ref": "SHP-A105-1",
+        "source": "Shipping",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A105-invoiced-INV-A105",
+        "orderId": "A105",
+        "type": "invoiced",
+        "at": "2026-10-25T09:40:00Z",
+        "ref": "INV-A105",
+        "source": "Billing",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A106-accepted-ORD-A106",
+        "orderId": "A106",
+        "type": "accepted",
+        "at": "2026-10-25T09:00:00Z",
+        "ref": "ORD-A106",
+        "source": "Sales",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A106-reserved-RSV-A106",
+        "orderId": "A106",
+        "type": "reserved",
+        "at": "2026-10-25T09:05:00Z",
+        "ref": "RSV-A106",
+        "source": "Inventory",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A106-shipped-SHP-A106-1",
+        "orderId": "A106",
+        "type": "shipped",
+        "at": "2026-10-25T09:30:00Z",
+        "ref": "SHP-A106-1",
+        "source": "Shipping",
+        "integrationStatus": "Succeeded"
+      },
+      {
+        "id": "A106-invoiced-INV-A106",
+        "orderId": "A106",
+        "type": "invoiced",
+        "at": "2026-10-25T09:40:00Z",
+        "ref": "INV-A106",
+        "source": "Billing",
+        "integrationStatus": "Succeeded"
+      }
+    ],
+    "recoveries": [],
+    "audit": []
+  },
+  "findings": [
+    {
+      "orderId": "A101",
+      "evidence": [
+        "A101-accepted-ORD-A101",
+        "A101-reserved-RSV-A101"
+      ],
+      "shipments": 0,
+      "late": true,
+      "stale": false,
+      "code": "MISSING_SHIPMENT",
+      "status": "At risk",
+      "severity": "High",
+      "title": "Shipment deadline missed",
+      "rule": "R01 · Shipment before deadline",
+      "next": "Confirm the inventory reservation and approve one sandbox shipment.",
+      "recoverable": true
+    },
+    {
+      "orderId": "A102",
+      "evidence": [
+        "A102-accepted-ORD-A102",
+        "A102-reserved-RSV-A102",
+        "A102-shipped-SHP-A102-1",
+        "A102-shipped-SHP-A102-2",
+        "A102-invoiced-INV-A102"
+      ],
+      "shipments": 2,
+      "late": true,
+      "stale": false,
+      "code": "DUPLICATE_SHIPMENT",
+      "status": "At risk",
+      "severity": "Critical",
+      "title": "Two shipment references",
+      "rule": "R02 · One shipment per order",
+      "next": "Ask fulfillment to investigate both shipment references. Do not replay the order.",
+      "recoverable": false
+    },
+    {
+      "orderId": "A103",
+      "evidence": [
+        "A103-accepted-ORD-A103",
+        "A103-reserved-RSV-A103",
+        "A103-invoiced-INV-A103"
+      ],
+      "shipments": 0,
+      "late": true,
+      "stale": false,
+      "code": "INVOICE_WITHOUT_SHIPMENT",
+      "status": "At risk",
+      "severity": "High",
+      "title": "Invoice without shipment",
+      "rule": "R03 · Shipment before invoice",
+      "next": "Escalate to billing and fulfillment. Validate source records before requesting a correction.",
+      "recoverable": false
+    },
+    {
+      "orderId": "A104",
+      "evidence": [
+        "A104-accepted-ORD-A104",
+        "A104-reserved-RSV-A104"
+      ],
+      "shipments": 0,
+      "late": false,
+      "stale": false,
+      "code": "PENDING",
+      "status": "Pending",
+      "severity": "Normal",
+      "title": "Within shipment window",
+      "rule": "R01 · Shipment before deadline",
+      "next": "Wait for the shipment deadline; no intervention is warranted.",
+      "recoverable": false
+    },
+    {
+      "orderId": "A105",
+      "evidence": [
+        "A105-accepted-ORD-A105",
+        "A105-reserved-RSV-A105",
+        "A105-shipped-SHP-A105-1",
+        "A105-invoiced-INV-A105"
+      ],
+      "shipments": 1,
+      "late": true,
+      "stale": false,
+      "code": "HEALTHY",
+      "status": "Healthy",
+      "severity": "Normal",
+      "title": "Shipment outcome met",
+      "rule": "R01–R03 · Checks satisfied",
+      "next": "No intervention required. Physical delivery is outside this prototype’s scope.",
+      "recoverable": false
+    },
+    {
+      "orderId": "A106",
+      "evidence": [
+        "A106-accepted-ORD-A106",
+        "A106-reserved-RSV-A106",
+        "A106-shipped-SHP-A106-1",
+        "A106-invoiced-INV-A106"
+      ],
+      "shipments": 1,
+      "late": true,
+      "stale": false,
+      "code": "HEALTHY",
+      "status": "Healthy",
+      "severity": "Normal",
+      "title": "Shipment outcome met",
+      "rule": "R01–R03 · Checks satisfied",
+      "next": "No intervention required. Physical delivery is outside this prototype’s scope.",
+      "recoverable": false
+    }
+  ]
+}
